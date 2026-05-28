@@ -38,3 +38,11 @@ for i in range(len(a)):
         print(a[i],'+',a[j],'==',a[i]+a[j])
     print('')
 
+#print the sum of triplet i,j,k  that is i<j<k 
+a=[10,20,30,40,50]
+sum = 60
+for i in range(len(a)):
+    for j in range(i+1,len(a)):
+        for k in range(j+1,len(a)):
+            if a[i]+a[j]+a[k]==sum:
+                print(a[i],'+',a[j],'+',a[k],'==',sum)
